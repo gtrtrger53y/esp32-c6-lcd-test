@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESP32‑C6 LCD Test Firmware Installer</title>
+  <!--
+    This page uses ESP Web Tools to offer a simple installer button that
+    flashes the compiled firmware onto your ESP32‑C6 development board via
+    Web Serial.  To host your own installer, upload this HTML file,
+    manifest.json and your compiled binary to a GitHub repository (for
+    example in the root or a docs/ folder) and enable GitHub Pages.
+    See https://esphome.github.io/esp-web-tools/ for details.
+  -->
+  <script type="module"
+          src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module">
+  </script>
+  <style>
+    body {
+      font-family: sans-serif;
+      line-height: 1.6;
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h1 { color: #007ACC; }
+  </style>
+</head>
+<body>
+  <h1>ESP32‑C6 LCD Test Firmware</h1>
+  <p>
+    Click the button below to install the test firmware onto your
+    Waveshare ESP32‑C6‑LCD‑1.47 board.  The firmware will exercise the
+    display, RGB LED and Wi‑Fi scan capabilities.  You must use a
+    compatible browser such as Chrome or Edge on a desktop computer to
+    access the USB serial port.
+  </p>
+  <!--
+    The manifest attribute points to a JSON file that describes the
+    firmware.  When hosting this page on GitHub Pages the relative
+    URL resolves correctly.  You can also use an absolute URL if the
+    manifest lives elsewhere.
+  -->
+  <esp-web-install-button manifest="manifest.json"></esp-web-install-button>
+  <p>
+    After flashing, open a serial monitor at 115200 baud to view
+    diagnostic output.  The on‑screen information will update on
+    startup.
+  </p>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "ESP32‑C6 LCD Test Firmware",
+  "version": "0.1.0",
+  "new_install_prompt_erase": true,
+  "release_notes": "Initial test firmware with display, RGB LED and Wi‑Fi scan",
+  "builds": [
+    {
+      "chipFamily": "ESP32-C6",
+      "parts": [
+        {
+          "path": "firmware/esp32_c6_lcd_test.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}
